@@ -34,6 +34,12 @@ export default function Login() {
     };
     return(
         <div className="login-container">
+
+            <h1 className="logo-title">
+                <span>💰</span>
+                <span className="logo-title-text">FinanceIT</span>
+                <span>💰</span>   
+            </h1>
             <div className="login-box">
                 <h2>Sign in to your account</h2>
                 {error && <div className="error">{error}</div>}
@@ -62,3 +68,4 @@ export default function Login() {
         </div>
     );
 }
+

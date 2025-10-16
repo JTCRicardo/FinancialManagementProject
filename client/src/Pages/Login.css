@@ -1,6 +1,7 @@
 .login-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     height: 100vh;
     background-color: #f6f8fa;
@@ -28,6 +29,7 @@
     border: 1px solid #d0d7de;
     border-radius: 4px;
     font-size: 14px;
+    box-sizing: border-box;
   }
   
   form button {
@@ -60,3 +62,38 @@
     border-radius: 4px;
     text-align: center;
   }
+.logo-title {
+    
+    font-size: 6.5rem; 
+    margin-bottom: 2.5rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; 
+
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: dropIn 2s forwards ease-out;
+
+    
+}
+
+@keyframes dropIn {
+    to {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+.logo-title-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    
+    background: linear-gradient(45deg, #2ea44f, #218838);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+
+}
